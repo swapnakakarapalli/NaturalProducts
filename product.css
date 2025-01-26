@@ -1,0 +1,275 @@
+a img {
+  width: 100px;
+}
+
+@media (max-width:992px) {
+  a img {
+      width: 50px;
+  }
+
+  .bg img {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+  }
+
+  .bg,
+  .content {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+}
+
+
+/* General Styles */
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* green_button */
+.green_button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.green_button:hover {
+  background-color: #388e3c;
+}
+
+
+
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background-image: url('assets/ProductPage\ Banner.jpeg'); /* Replace with your high-quality image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full-screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay effect */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.product-page {
+  display: flex;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.filter-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filter-group ul li {
+  margin-bottom: 10px;
+}
+
+.filter-group ul li input {
+  margin-right: 5px;
+}
+
+.price-slider {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.price-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.product-grid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image {
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.quick-view {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #4CAF50; /* Green button */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: none;
+}
+
+.product-card:hover .quick-view {
+  display: block;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.price {
+  color: #4CAF50; /* Green price */
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.rating {
+  color: #FFD700; /* Gold color for stars */
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.add-to-cart {
+  background: #4CAF50; /* Green button */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+footer h6 {
+  color: #ffca28;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffca28;
+}
+
+/* Quick Links */
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  flex: 1;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #ffca28;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #e6b800;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+}

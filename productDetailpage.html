@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="productDetailpage.css" />
+  <link rel="stylesheet" href="bootstrap code/css/bootstrap.min.css" />
+  <script src="bootstrap code/js/bootstrap.bundle.min.js"></script>
+  <title>Product details</title>
+</head>
+
+<body>
+  <!-- Product Detail Page -->
+  <section class="container py-5">
+    <div class="row shadow-sm">
+      <div class="col-12 col-md-4">
+        <div class="main-image">
+          <img src="assets/shoppingProducts1.webp" alt="Main Product Image" />
+        </div>
+        <div class="thumbnail-gallery">
+          <img src="assets/productDetail1.png" alt="Product Thumbnail 1" />
+          <img src="assets/productDetail2.webp" alt="Product Thumbnail 2" />
+          <img src="assets/productDetail3.jpg" alt="Product Thumbnail 3" />
+        </div>
+      </div>
+
+      <div class="col-12 col-md-8 py-5">
+        <h1>Apple 1 kg <span class="tag organic">Organic</span></h1>
+        <p class="short-description">
+          Freshly harvested from local farms, 100% organic.
+        </p>
+        <p class="price">
+          Rs 219.99 <span class="discount">10% off on bulk orders</span>
+        </p>
+
+        <div class="quantity-selector">
+          <button class="quantity-btn">-</button>
+          <input type="text" value="1" readonly />
+          <button class="quantity-btn">+</button>
+        </div>
+
+        <button data-bs-target="#cart" data-bs-toggle="modal" class="add-to-cart">Add to Cart</button>
+
+
+        <section>
+          <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'description')">Description</button>
+            <button class="tab-link" onclick="openTab(event, 'nutritional-info')">Nutritional Info</button>
+            <button class="tab-link" onclick="openTab(event, 'reviews')">Customer Reviews</button>
+            <button class="tab-link" onclick="openTab(event, 'delivery-info')">Delivery Info</button>
+          </div>
+
+          <div id="description" class="tab-content active ">
+            <div class="row ">
+              <div class="col-12 col-md-6">
+                <h3>Product Description</h3>
+                <p>
+                  Loamy soils, rich in organic matter with pH 5.5 to 6.5 and having
+                  proper drainage and aeration are suitable for cultivation
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="nutritional-info" class="tab-content">
+            <div class="row ">
+              <div class="col-12 col-md-6">
+                <h3>Nutritional Information</h3>
+                <p>Details on the nutritional value of the product.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="reviews" class="tab-content">
+            <div class="row ">
+              <div class="col-12 col-md-6">
+                <h3>Customer Reviews</h3>
+                <div class="review">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-regular fa-star"></i>
+                  <p>“Great product, highly recommend!” - John Doe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="delivery-info" class="tab-content">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h3>Delivery Information</h3>
+                <p>Information on delivery areas, timelines, and any extra fees.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommended Products Section -->
+  <section class="recommended-products">
+    <div class="container py-5">
+      <h2>You Might Also Like</h2>
+      <div class="row">
+        <div class="col-12 col-md-3 py-3">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="assets/shoppingProducts2.webp" alt="Recommended Product 1" />
+            </div>
+            <h3>Fresho Pear - Green</h3>
+            <p class="price">Rs 115.00</p>
+            <button data-bs-target="#cart" data-bs-toggle="modal" class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 py-3">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="assets/shoppingProducts3.webp" alt="Recommended Product 2" />
+            </div>
+            <h3>Fresho Mosambi</h3>
+            <p class="price">Rs 59.34</p>
+            <button data-bs-target="#cart" data-bs-toggle="modal" class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 py-3">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="assets/shoppingProducts4.webp" alt="Recommended Product 3" />
+            </div>
+            <h3>Bananas 1kg</h3>
+            <p class="price">RS 75.00</p>
+            <button data-bs-target="#cart" data-bs-toggle="modal" class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 py-3">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="assets/shoppingProducts5.webp" alt="Recommended Product 2" />
+            </div>
+            <h3>Fresho Blueberry 125 g</h3>
+            <p class="price">Rs 403.95</p>
+            <button data-bs-target="#cart" data-bs-toggle="modal" class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 py-3">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="assets/shoppingProducts6.webp" alt="Recommended Product 3" />
+            </div>
+            <h3>Raspberries 1 box</h3>
+            <p class="price">Rs 500.00</p>
+            <button data-bs-target="#cart" data-bs-toggle="modal" class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Repeat .product-card for more recommended products -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="container py-5">
+    <a href="./products.html"><button class="back">Back</button></a>
+  </div>
+
+  <!--Modal-->
+  <div class="modal fade" id="cart" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content  border border-secondary">
+        <div class="modal-header">
+          <h4 class="modal-title ">Product added in the cart</h4>
+          <button data-bs-dismiss="modal" class="btn-close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="productDetailpage.js"></script>
+</body>
+
+</html>
