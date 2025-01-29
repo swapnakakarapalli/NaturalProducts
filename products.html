@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="bootstrap code/css/bootstrap.min.css">
+    <script src="bootstrap code/js/bootstrap.bundle.min.js"></script>
+    <title>Products</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4f1bb0da8e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-sm navbar-light ">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/logo.jpg" alt="" srcset="">
+                    </a>
+                    <button class="navbar-toggler d-lg-none " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0 nav-underline">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html" aria-current="page">Home
+                                    <span class="visually-hidden">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./products.html" aria-current="page">Products
+                                    <span class="visually-hidden">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="./about.html" aria-current="page">About Us
+                                    <span class="visually-hidden">(current)</span></a>
+                            </li>
+                        </ul>
+                        <form class="d-flex my-2 my-lg-0">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn">
+                                Start Download
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>100% Organic, Farm-to-Table Produce</h1>
+            <p>Fresh from our farms to your table, naturally grown, and pesticide-free.</p>
+            <a href="./productDetailpage.html" class="green_button">Shop Now</a>
+        </div>
+    </section>
+
+    <main class="product-page">
+        <!-- Sidebar for Filters -->
+        <aside class="sidebar">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Categories</h3>
+                <ul>
+                    <li><input type="checkbox" id="fruits" name="category"><label for="fruits">Fruits</label></li>
+                    <li><input type="checkbox" id="vegetables" name="category"><label
+                            for="vegetables">Vegetables</label></li>
+                    <li><input type="checkbox" id="dairy" name="category"><label for="dairy">Dairy</label></li>
+                    <li><input type="checkbox" id="spices" name="category"><label for="spices">Spices</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h3>Sort by</h3>
+                <select>
+                    <option value="price">Price</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="new-arrivals">New Arrivals</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <input type="range" min="0" max="1000" value="500" class="price-slider">
+                <div class="price-labels">
+                    <span>Rs0</span>
+                    <span>Rs1000</span>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3>More Filters</h3>
+                <label><input type="checkbox"> Organic</label><br>
+                <label><input type="checkbox"> Non-GMO</label><br>
+                <label><input type="checkbox"> Locally Sourced</label>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <section class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/shoppingProducts1.webp" alt="Product 1">
+                    <a href="./productDetailpage.html"><button class="quick-view">Quick View</button></a>
+                </div>
+                <h3>Apple 1 kg</h3>
+                <p class="price">Rs 219.99</p>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-regular fa-star"></i>
+                </div>
+                <button data-bs-target="#cart" data-bs-toggle="modal" class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Repeat .product-card for more products -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/shoppingProducts2.webp" alt="Product 1">
+                    <a href="./productDetailpage.html"><button class="quick-view">Quick View</button></a>
+                </div>
+                <h3>Fresho Pear - Green</h3>
+                <p class="price">Rs 115.00</p>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-regular fa-star"></i>
+                </div>
+                <button data-bs-target="#cart" data-bs-toggle="modal" class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/shoppingProducts3.webp" alt="Product 1">
+                    <a href="./productDetailpage.html"><button class="quick-view">Quick View</button></a>
+                </div>
+                <h3>Fresho Mosambi</h3>
+                <p class="price">Rs 59.34</p>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-regular fa-star"></i>
+                </div>
+                <button data-bs-target="#cart" data-bs-toggle="modal" class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/shoppingProducts4.webp" alt="Product 1">
+                    <a href="./productDetailpage.html"><button class="quick-view">Quick View</button></a>
+                </div>
+                <h3>Bananas 1kg</h3>
+                <p class="price">RS 75.00</p>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-regular fa-star"></i>
+                </div>
+                <button data-bs-target="#cart" data-bs-toggle="modal" class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/shoppingProducts5.webp" alt="Product 1">
+                    <a href="./productDetailpage.html"><button class="quick-view">Quick View</button></a>
+                </div>
+                <h3>Fresho Blueberry 125 g</h3>
+                <p class="price">Rs 403.95</p>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-regular fa-star"></i>
+                </div>
+                <button data-bs-target="#cart" data-bs-toggle="modal" class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/shoppingProducts6.webp" alt="Product 1">
+                    <a href="./productDetailpage.html"><button class="quick-view">Quick View</button></a>
+                </div>
+                <h3>Raspberries 1 box</h3>
+                <p class="price">Rs 500.00</p>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-regular fa-star"></i>
+                </div>
+                <button data-bs-target="#cart" data-bs-toggle="modal" class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- Quick Links -->
+                <div class="col-6 col-md-3 mb-3">
+                    <h6>Quick Links</h6>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+
+
+                <!-- Contact Information -->
+                <div class="col-6 col-md-3 mb-3">
+                    <h6>Contact Us</h6>
+                    <p>123 Pure Agriculture Rd, Organic City, Kakinada 12345</p>
+                    <p>Email: <a href="mailto:info@pureagriculture.com">info@pureagriculture.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="col-6 col-md-3 mb-3">
+                    <h6>Newsletter</h6>
+                    <p>Subscribe to receive updates and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input class="mb-3" type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="col-6 col-md-3 mb-3">
+                    <h6>Follow Us</h6>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pure Agriculture. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Modal-->
+    <div class="modal fade" id="cart" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content  border border-secondary">
+                <div class="modal-header">
+                    <h4 class="modal-title ">Product added in the cart</h4>
+                    <button data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="StartDownload.js"></script>
+</body>
+
+
+</html>
